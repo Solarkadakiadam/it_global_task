@@ -1,6 +1,6 @@
 ....
 
-### Installation
+### installation
 
 start with " npm install " to install necessary packages that are used in the project
 
