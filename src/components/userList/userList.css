@@ -1,0 +1,21 @@
+.gridContainer {
+  display: flex;
+  flex-direction: column;
+}
+.gridCellContainer,
+.gridCellContainerWhite {
+  display: flex;
+  background-color: rgb(221, 221, 221);
+  flex: 1;
+}
+.gridCellContainerWhite {
+  background-color: white;
+  cursor: pointer;
+}
+.gridCellSubContainer {
+  flex: 1;
+  text-align: center;
+  border: 1px solid rgb(66, 66, 66);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
