@@ -1,4 +1,7 @@
+....
+
 ### Installation
+
 start with " npm install " to install necessary packages that are used in the project
 
 ### starting the app
