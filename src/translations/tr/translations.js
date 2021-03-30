@@ -10,4 +10,7 @@ export const TRANSLATIONS_TR = {
   email: "E-mail",
   street: "Sokak",
   city: "Şehir",
+  new: "Yeni",
+  saveUser: "Kullanıcıyı Kaydet",
+  userDetailForm: "Kullanıcı Detay Formu",
 };

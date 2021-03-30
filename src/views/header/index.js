@@ -9,7 +9,7 @@ function Header() {
 
   const { t } = useTranslation();
 
-  const [language, setLanguage] = useState("tr");
+  const [language, setLanguage] = useState("en");
 
   const handleOnclick = (e) => {
     setLanguage(e);

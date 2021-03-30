@@ -10,4 +10,7 @@ export const TRANSLATIONS_EN = {
   email: "E-mail",
   street: "Street",
   city: "City",
+  new: "New",
+  saveUser: "Save User",
+  userDetailForm: "User Detail Form",
 };

@@ -19,6 +19,6 @@ i18n
     },
   });
 
-i18n.changeLanguage("tr");
+i18n.changeLanguage("en");
 
 export default i18n;

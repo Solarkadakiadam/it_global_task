@@ -7,28 +7,35 @@ function UserDetail(props) {
 
   const { userDetail } = props;
 
-  const questions = [
-    { key: "name", name: t("name") },
-    { key: "username", name: t("username") },
-    { key: "street", name: t("street") },
-    { key: "city", name: t("city") },
-  ];
+  // e.prevent default used to prevent browser from re-rendering
+  const handleSubmitForm = (e) => {
+    e.preventDefault();
+    props.saveUser();
+  };
 
   return (
     <div>
-      <h3>User Detail Form</h3>
-      <form>
-        {questions.map((col) => (
+      <h3>{t("userDetailForm")}</h3>
+      <form onSubmit={handleSubmitForm}>
+        {props.questions.map((col) => (
           <label key={col.key}>
-            {t(`${col.name}`)}
+            {t(col.name)}
             <input
+              placeholder={t(col.name)}
+              readOnly={!props.showSaveButton}
+              required={col.required}
               onChange={(e) => props.onChange(col.key, e.target.value)}
               value={userDetail[`${col.key}`]}
               type="text"
-              name={`${col.key}`}
+              name={col.key}
             />
           </label>
         ))}
+        {props.showSaveButton && (
+          <button type="submit" className="newButton">
+            <h2>{t("saveUser")}</h2>
+          </button>
+        )}
       </form>
       {/* <input type="submit" value="Submit" /> */}
     </div>

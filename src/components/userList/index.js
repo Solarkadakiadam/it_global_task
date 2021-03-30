@@ -1,18 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import React from "react";
 
 import "./userList.css";
 
 function UserList(props) {
-  const { t } = useTranslation();
-
-  const { data } = props;
-
-  const columns = [
-    { key: "name", name: t("name") },
-    { key: "username", name: t("username") },
-    { key: "email", name: t("email") },
-  ];
+  const { data, columns } = props;
 
   return (
     <div>
